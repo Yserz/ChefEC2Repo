@@ -18,7 +18,9 @@ override_attributes(
     :domains => {
       "domain1" => {
         "config" => {
-          "admin_port" => 4848
+          "admin_port" => 4848,
+          "username" => "admin",
+          "password" => "password"
         }
       }
     }

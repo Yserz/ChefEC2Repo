@@ -3,17 +3,22 @@ description "App server role"
 
 default_attributes(
   "java" => {
-    "install_flavor" => {"oracle"}
-    "oracle" => {
-      "accept_oracle_download_terms" => true
-    }
+    "install_flavor" => "oracle"
   }
-  "glassfish" => {
-    "domains" => {
+)
+default_attributes(
+  :java => {
+     :oracle => {
+       "accept_oracle_download_terms" => true
+     }
+   }
+)
+override_attributes(
+  :glassfish => {
+    :domains => {
       "domain1" => {
         "config" => {
           "admin_port" => 4848
-          "port" => 8080
         }
       }
     }
@@ -24,17 +29,7 @@ all_env = [
   "recipe[java]",
   "recipe[glassfish::attribute_driven_domain]",
 ]
-#override_attributes(
-#  :glassfish => {
-#    :domains => {
-#      "domain1" => {
-#        "config" => {
-#          "admin_port" => 4848
-#        }
-#      }
-#    }
-#  }
-#)
+
 run_list(all_env)
 
 env_run_lists(

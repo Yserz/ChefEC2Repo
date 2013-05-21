@@ -16,4 +16,5 @@ env_run_lists(
   "prod" => all_env,
   #"dev" => all_env + ["recipe[php:module_xdebug]"],
   "dev" => all_env,
+  "test" => all_env,
 )

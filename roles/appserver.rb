@@ -2,15 +2,13 @@ name "appserver"
 description "App server role"
 
 default_attributes(
-  "java" => {
-    "install_flavor" => "oracle"
-  }
-)
-default_attributes(
   :java => {
      :oracle => {
        "accept_oracle_download_terms" => true
      }
+   },
+   "java" => {
+     "install_flavor" => "oracle"
    }
 )
 override_attributes(

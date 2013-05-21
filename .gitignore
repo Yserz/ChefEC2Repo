@@ -8,3 +8,4 @@
 .chef/*.rb
 .chef/encrypted_data_bag_secret
 .DS_Store
+*/.DS_Store

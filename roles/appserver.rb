@@ -21,6 +21,7 @@ override_attributes(
           "admin_port" => 4848,
           "username" => "admin",
           "password" => "password",
+          "secure" => true,
           "max_stack_size" => 256
         }
       }

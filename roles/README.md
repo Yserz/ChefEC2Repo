@@ -16,3 +16,4 @@ For example, create `roles/base_example.rb`:
 knife role from file /vagrant/chef-repo/roles/base.rb
 knife role from file /vagrant/chef-repo/roles/webserver.rb
 knife role from file /vagrant/chef-repo/roles/db_master.rb
+knife role from file /vagrant/chef-repo/roles/appserver.rb

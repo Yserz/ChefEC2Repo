@@ -5,5 +5,7 @@ http://wiki.opscode.com/display/chef/Environments
 
 #Upload the environments to the Chef server:
 use the following command to upload the environments from the chef-workstation to the chef-server:
-`knife environment from file dev.rb
-knife environment from file prod.rb`
+`knife environment from file dev.rb`
+`knife environment from file prod.rb`
+and
+`knife environment from file test.rb`

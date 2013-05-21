@@ -9,6 +9,7 @@ default_attributes(
 all_env = [ 
   "role[base]",
   "recipe[java]",
+  "recipe[glassfish]",
 ]
 
 run_list(all_env)

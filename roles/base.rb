@@ -15,4 +15,9 @@ override_attributes(
       :passwordless => true
     }
   }
+  :java => {
+    :oracle => {
+      "accept_oracle_download_terms" => true
+    }
+  }
 )

@@ -1,0 +1,11 @@
+{
+    "id": "sysadmin",
+    "ssh_keys": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCP/zU2eHUwvNEsrSrBWiKQsVt6c0X8Qx9c5qKD4/JXkII6MGhuGtVz
+bpkGFpYXlqgblQtKTnH07ipT0DnRNccLxU+JXjaTci7zjWBXPSPOCBuz3YPtcdC7iOcsXhVTy5toe4GZ4Z74oDyYqchX
+BM0gefEUsMgDmYldpJP4UgAeTeozof0GTUhlEVXWASWSPCDIRxGVyRD4ui8zWj6MTfVuEpKLrV82kiBiM2JcckOekgdW
+tFUGMhrSWBQAjUIxFc4hPby/yTn8NlI5z3SAfNHYzwIfC2/iYGeXKvfPJCJXAf/25ex3rVFgKgPNWKzqoMbqN10z6d9s
+6QJT66ttF8qB MichaelKoppen",
+    "groups": [ "sysadmin", "dba", "devops" ],
+    "uid": 2001,
+    "shell": "\/bin\/bash"
+}

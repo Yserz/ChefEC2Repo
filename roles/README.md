@@ -11,6 +11,8 @@ For example, create `roles/base_example.rb`:
     # Attributes applied no matter what the node has set already.
     #override_attributes()
 
-Then upload it to the Chef Server:
-    
-    knife role from file roles/base_example.rb
+#Upload roles from workstation to server
+
+knife role from file /vagrant/chef-repo/roles/base.rb
+knife role from file /vagrant/chef-repo/roles/webserver.rb
+knife role from file /vagrant/chef-repo/roles/db_master.rb

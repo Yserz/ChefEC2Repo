@@ -11,17 +11,17 @@ all_env = [
   "recipe[java]",
   "recipe[glassfish::attribute_driven_domain]",
 ]
-override_attributes(
-  :glassfish => {
-    :domains => {
-      "domain1" => {
-        "config" => {
-          "admin_port" => 4848
-        }
-      }
-    }
-  }
-)
+#override_attributes(
+#  :glassfish => {
+#    :domains => {
+#      "domain1" => {
+#        "config" => {
+#          "admin_port" => 4848
+#        }
+#      }
+#    }
+#  }
+#)
 run_list(all_env)
 
 env_run_lists(

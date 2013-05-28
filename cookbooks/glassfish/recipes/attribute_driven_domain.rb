@@ -99,7 +99,7 @@ node['glassfish']['domains'].each_pair do |domain_key, definition|
     username username if username
     password_file password_file if password_file
     secure secure if secure
-    action ('true' == definition['config']['remote_access'].to_s) ? :enable : :disable
+    action :enable#('true' == definition['config']['remote_access'].to_s) ? :enable : :disable
   end
 
   if definition['properties']

@@ -1,18 +1,14 @@
 name "appserver"
 description "App server role"
 
-default_attributes(
-   "java" => {
-     "install_flavor" => "oracle"
-   }
-)
 override_attributes(
   :java => {
+    :install_flavor => "oracle",
     :oracle => {
-      "accept_oracle_download_terms" => true
-     }
-   }
- )
+      :accept_oracle_download_terms => true
+    }
+  }
+)
 override_attributes(
   :glassfish => {
     :domains => {

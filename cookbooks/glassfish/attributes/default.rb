@@ -16,6 +16,7 @@
 
 default['glassfish']['user'] = 'glassfish'
 default['glassfish']['group'] = 'glassfish-admin'
+default['config']['remote_access'] = 'true'
 
 version = "3.1.2.2"
 default['glassfish']['package_url'] = "http://dlc.sun.com.edgesuite.net/glassfish/#{version}/release/glassfish-#{version}.zip"

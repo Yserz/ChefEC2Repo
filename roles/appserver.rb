@@ -1,15 +1,17 @@
 name "appserver"
 description "App server role"
 
-override_attributes(
+default_attributes(
   :java => {
-    :install_flavor => "oracle",
-    :oracle => {
-      :accept_oracle_download_terms => true
-    }
-  }
+     :oracle => {
+       "accept_oracle_download_terms" => true
+     }
+   }
 )
 override_attributes(
+  :java => {
+    :install_flavor => "oracle"
+  },
   :glassfish => {
     :domains => {
       "domain1" => {
@@ -18,7 +20,8 @@ override_attributes(
           "username" => "admin",
           "password" => "password",
           "secure" => true,
-          "max_stack_size" => 256
+          "max_stack_size" => 256,
+          "terse" => true
         }
       }
     }

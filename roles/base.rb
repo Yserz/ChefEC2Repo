@@ -7,7 +7,8 @@ run_list(
   "recipe[apt]",
   "recipe[git]",
   "recipe[build-essential]",
-  "recipe[vim]"
+  "recipe[vim]",
+  "recipe[htop]"
 ) 
 ## Configure /etc/sudoers
 override_attributes(

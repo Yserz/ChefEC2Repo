@@ -20,7 +20,7 @@ override_attributes(
           "username" => "admin",
           "password" => "password",
           "secure" => false,
-          "max_stack_size" => 256,
+          "max_stack_size" => 512,
           "terse" => true
         }
       }
